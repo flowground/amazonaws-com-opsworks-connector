@@ -1,0 +1,212 @@
+{
+    "type": "object",
+    "properties": {
+        "Action": {
+            "required": true,
+            "type": "string"
+        },
+        "Version": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "AppId": {
+                    "description": "The app ID.",
+                    "type": "string"
+                },
+                "AppSource": {
+                    "description": "A <code>Source</code> object that specifies the app repository.",
+                    "properties": {
+                        "Password": {
+                            "description": "<p>When included in a request, the parameter depends on the repository type.</p> <ul> <li> <p>For Amazon S3 bundles, set <code>Password</code> to the appropriate IAM secret access key.</p> </li> <li> <p>For HTTP bundles and Subversion repositories, set <code>Password</code> to the password.</p> </li> </ul> <p>For more information on how to safely handle IAM credentials, see <a href=\"http://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html\">http://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html</a>.</p> <p>In responses, AWS OpsWorks Stacks returns <code>*****FILTERED*****</code> instead of the actual value.</p>",
+                            "type": "string"
+                        },
+                        "Revision": {
+                            "description": "The application's version. AWS OpsWorks Stacks enables you to easily deploy new versions of an application. One of the simplest approaches is to have branches or revisions in your repository that represent different versions that can potentially be deployed.",
+                            "type": "string"
+                        },
+                        "SshKey": {
+                            "description": "<p>In requests, the repository's SSH key.</p> <p>In responses, AWS OpsWorks Stacks returns <code>*****FILTERED*****</code> instead of the actual value.</p>",
+                            "type": "string"
+                        },
+                        "Type": {
+                            "description": "The repository type.",
+                            "enum": [
+                                "git",
+                                "svn",
+                                "archive",
+                                "s3"
+                            ],
+                            "type": "string"
+                        },
+                        "Url": {
+                            "description": "The source URL. The following is an example of an Amazon S3 source URL: <code>https://s3.amazonaws.com/opsworks-demo-bucket/opsworks_cookbook_demo.tar.gz</code>.",
+                            "type": "string"
+                        },
+                        "Username": {
+                            "description": "<p>This parameter depends on the repository type.</p> <ul> <li> <p>For Amazon S3 bundles, set <code>Username</code> to the appropriate IAM access key ID.</p> </li> <li> <p>For HTTP bundles, Git repositories, and Subversion repositories, set <code>Username</code> to the user name.</p> </li> </ul>",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "Attributes": {
+                    "description": "One or more user-defined key/value pairs to be added to the stack attributes.",
+                    "items": {
+                        "properties": {
+                            "key": {
+                                "enum": [
+                                    "DocumentRoot",
+                                    "RailsEnv",
+                                    "AutoBundleOnDeploy",
+                                    "AwsFlowRubySettings"
+                                ],
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "DataSources": {
+                    "description": "The app's data sources.",
+                    "items": {
+                        "description": "Describes an app's data source.",
+                        "properties": {
+                            "Arn": {
+                                "description": "The data source's ARN.",
+                                "type": "string"
+                            },
+                            "DatabaseName": {
+                                "description": "The database name.",
+                                "type": "string"
+                            },
+                            "Type": {
+                                "description": "The data source's type, <code>AutoSelectOpsworksMysqlInstance</code>, <code>OpsworksMysqlInstance</code>, <code>RdsDbInstance</code>, or <code>None</code>.",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "Description": {
+                    "description": "A description of the app.",
+                    "type": "string"
+                },
+                "Domains": {
+                    "description": "The app's virtual host settings, with multiple domains separated by commas. For example: <code>'www.example.com, example.com'</code> ",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "EnableSsl": {
+                    "description": "Whether SSL is enabled for the app.",
+                    "type": "boolean"
+                },
+                "Environment": {
+                    "description": "<p>An array of <code>EnvironmentVariable</code> objects that specify environment variables to be associated with the app. After you deploy the app, these variables are defined on the associated app server instances.For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-creating.html#workingapps-creating-environment\"> Environment Variables</a>.</p> <p>There is no specific limit on the number of environment variables. However, the size of the associated data structure - which includes the variables' names, values, and protected flag values - cannot exceed 10 KB (10240 Bytes). This limit should accommodate most if not all use cases. Exceeding it will cause an exception with the message, \"Environment: is too large (maximum is 10KB).\"</p> <note> <p>This parameter is supported only by Chef 11.10 stacks. If you have specified one or more environment variables, you cannot modify the stack's Chef version.</p> </note>",
+                    "items": {
+                        "description": "Represents an app's environment variable.",
+                        "properties": {
+                            "Key": {
+                                "description": "(Required) The environment variable's name, which can consist of up to 64 characters and must be specified. The name can contain upper- and lowercase letters, numbers, and underscores (_), but it must start with a letter or underscore.",
+                                "type": "string"
+                            },
+                            "Secure": {
+                                "description": "(Optional) Whether the variable's value will be returned by the <a>DescribeApps</a> action. To conceal an environment variable's value, set <code>Secure</code> to <code>true</code>. <code>DescribeApps</code> then returns <code>*****FILTERED*****</code> instead of the actual value. The default value for <code>Secure</code> is <code>false</code>. ",
+                                "type": "boolean"
+                            },
+                            "Value": {
+                                "description": "(Optional) The environment variable's value, which can be left empty. If you specify a value, it can contain up to 256 characters, which must all be printable.",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "Key",
+                            "Value"
+                        ],
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "Name": {
+                    "description": "The app name.",
+                    "type": "string"
+                },
+                "SslConfiguration": {
+                    "description": "An <code>SslConfiguration</code> object with the SSL configuration.",
+                    "properties": {
+                        "Certificate": {
+                            "description": "The contents of the certificate's domain.crt file.",
+                            "type": "string"
+                        },
+                        "Chain": {
+                            "description": "Optional. Can be used to specify an intermediate certificate authority key or client authentication.",
+                            "type": "string"
+                        },
+                        "PrivateKey": {
+                            "description": "The private key; the contents of the certificate's domain.kex file.",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "Certificate",
+                        "PrivateKey"
+                    ],
+                    "type": "object"
+                },
+                "Type": {
+                    "description": "The app type.",
+                    "enum": [
+                        "aws-flow-ruby",
+                        "java",
+                        "rails",
+                        "php",
+                        "nodejs",
+                        "static",
+                        "other"
+                    ],
+                    "type": "string"
+                }
+            },
+            "required": [
+                "AppId"
+            ],
+            "type": "object"
+        },
+        "X_Amz_Content_Sha256": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Date": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Algorithm": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

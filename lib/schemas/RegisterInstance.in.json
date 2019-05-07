@@ -1,0 +1,87 @@
+{
+    "type": "object",
+    "properties": {
+        "Action": {
+            "required": true,
+            "type": "string"
+        },
+        "Version": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "Hostname": {
+                    "description": "The instance's hostname.",
+                    "type": "string"
+                },
+                "InstanceIdentity": {
+                    "description": "An InstanceIdentity object that contains the instance's identity.",
+                    "properties": {
+                        "Document": {
+                            "description": "A JSON document that contains the metadata.",
+                            "type": "string"
+                        },
+                        "Signature": {
+                            "description": "A signature that can be used to verify the document's accuracy and authenticity.",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "PrivateIp": {
+                    "description": "The instance's private IP address.",
+                    "type": "string"
+                },
+                "PublicIp": {
+                    "description": "The instance's public IP address.",
+                    "type": "string"
+                },
+                "RsaPublicKey": {
+                    "description": "The instances public RSA key. This key is used to encrypt communication between the instance and the service.",
+                    "type": "string"
+                },
+                "RsaPublicKeyFingerprint": {
+                    "description": "The instances public RSA key fingerprint.",
+                    "type": "string"
+                },
+                "StackId": {
+                    "description": "The ID of the stack that the instance is to be registered with.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "StackId"
+            ],
+            "type": "object"
+        },
+        "X_Amz_Content_Sha256": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Date": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Algorithm": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}
