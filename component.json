@@ -1,6 +1,6 @@
 {
     "title": "AWS OpsWorks",
-    "description": "<fullname>AWS OpsWorks</fullname> <p>Welcome to the <i>AWS OpsWorks Stacks API Reference</i>. This guide provides descriptions, syntax, and usage examples for AWS OpsWorks Stacks actions and data types, including common parameters and error codes. </p> <p>AWS OpsWorks Stacks is an application management service that provides an integrated experience for overseeing the complete application lifecycle. For information about this product, go to the <a href=\"http://aws.amazon.com/opsworks/\">AWS OpsWorks</a> details page. </p> <p> <b>SDKs and CLI</b> </p> <p>The most common way to use the AWS OpsWorks Stacks API is by using the AWS Command Line Interface (CLI) or by using one of the AWS SDKs to implement applications in your preferred language. For more information, see:</p> <ul> <li> <p> <a href=\"http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html\">AWS CLI</a> </p> </li> <li> <p> <a href=\"http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/opsworks/AWSOpsWorksClient.html\">AWS SDK for Java</a> </p> </li> <li> <p> <a href=\"http://docs.aws.amazon.com/sdkfornet/latest/apidocs/html/N_Amazon_OpsWorks.htm\">AWS SDK for .NET</a> </p> </li> <li> <p> <a href=\"http://docs.aws.amazon.com/aws-sdk-php-2/latest/class-Aws.OpsWorks.OpsWorksClient.html\">AWS SDK for PHP 2</a> </p> </li> <li> <p> <a href=\"http://docs.aws.amazon.com/sdkforruby/api/\">AWS SDK for Ruby</a> </p> </li> <li> <p> <a href=\"http://aws.amazon.com/documentation/sdkforjavascript/\">AWS SDK for Node.js</a> </p> </li> <li> <p> <a href=\"http://docs.pythonboto.org/en/latest/ref/opsworks.html\">AWS SDK for Python(Boto)</a> </p> </li> </ul> <p> <b>Endpoints</b> </p> <p>AWS OpsWorks Stacks supports the following endpoints, all HTTPS. You must connect to one of the following endpoints. Stacks can only be accessed or managed within the endpoint in which they are created.</p> <ul> <li> <p>opsworks.us-east-1.amazonaws.com</p> </li> <li> <p>opsworks.us-east-2.amazonaws.com</p> </li> <li> <p>opsworks.us-west-1.amazonaws.com</p> </li> <li> <p>opsworks.us-west-2.amazonaws.com</p> </li> <li> <p>opsworks.ca-central-1.amazonaws.com (API only; not available in the AWS console)</p> </li> <li> <p>opsworks.eu-west-1.amazonaws.com</p> </li> <li> <p>opsworks.eu-west-2.amazonaws.com</p> </li> <li> <p>opsworks.eu-west-3.amazonaws.com</p> </li> <li> <p>opsworks.eu-central-1.amazonaws.com</p> </li> <li> <p>opsworks.ap-northeast-1.amazonaws.com</p> </li> <li> <p>opsworks.ap-northeast-2.amazonaws.com</p> </li> <li> <p>opsworks.ap-south-1.amazonaws.com</p> </li> <li> <p>opsworks.ap-southeast-1.amazonaws.com</p> </li> <li> <p>opsworks.ap-southeast-2.amazonaws.com</p> </li> <li> <p>opsworks.sa-east-1.amazonaws.com</p> </li> </ul> <p> <b>Chef Versions</b> </p> <p>When you call <a>CreateStack</a>, <a>CloneStack</a>, or <a>UpdateStack</a> we recommend you use the <code>ConfigurationManager</code> parameter to specify the Chef version. The recommended and default value for Linux stacks is currently 12. Windows stacks use Chef 12.2. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-chef11.html\">Chef Versions</a>.</p> <note> <p>You can specify Chef 12, 11.10, or 11.4 for your Linux stack. We recommend migrating your existing Linux stacks to Chef 12 as soon as possible.</p> </note>",
+    "description": "AWS OpsWorks Welcome to the AWS OpsWorks Stacks API Reference. This guide provides\ndescriptions, syntax, and usage examples for AWS OpsWorks Stacks actions and\ndata types, including common parameters and error codes. \n\nAWS OpsWorks Stacks is an application management service that provides an\nintegrated experience for overseeing the complete application lifecycle. For\ninformation about this product, go to the AWS OpsWorks\n[http://aws.amazon.com/opsworks/] details page. \n\n SDKs and CLI \n\nThe most common way to use the AWS OpsWorks Stacks API is by using the AWS\nCommand Line Interface (CLI) or by using one of the AWS SDKs to implement\napplications in your preferred language. For more information, see:\n\n *   AWS CLI\n   [http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html] \n   \n   \n *   AWS SDK for Java\n   [http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/opsworks/AWSOpsWorksClient.html] \n    \n   \n   \n *   AWS SDK for .NET\n   [http://docs.aws.amazon.com/sdkfornet/latest/apidocs/html/N_Amazon_OpsWorks.htm] \n    \n   \n   \n *   AWS SDK for PHP 2\n   [http://docs.aws.amazon.com/aws-sdk-php-2/latest/class-Aws.OpsWorks.OpsWorksClient.html] \n    \n   \n   \n *   AWS SDK for Ruby [http://docs.aws.amazon.com/sdkforruby/api/] \n   \n   \n *   AWS SDK for Node.js [http://aws.amazon.com/documentation/sdkforjavascript/] \n   \n   \n *   AWS SDK for Python(Boto)\n   [http://docs.pythonboto.org/en/latest/ref/opsworks.html] \n   \n   \n\n Endpoints \n\nAWS OpsWorks Stacks supports the following endpoints, all HTTPS. You must\nconnect to one of the following endpoints. Stacks can only be accessed or\nmanaged within the endpoint in which they are created.\n\n *  opsworks.us-east-1.amazonaws.com\n   \n   \n *  opsworks.us-east-2.amazonaws.com\n   \n   \n *  opsworks.us-west-1.amazonaws.com\n   \n   \n *  opsworks.us-west-2.amazonaws.com\n   \n   \n *  opsworks.ca-central-1.amazonaws.com (API only; not available in the AWS\n   console)\n   \n   \n *  opsworks.eu-west-1.amazonaws.com\n   \n   \n *  opsworks.eu-west-2.amazonaws.com\n   \n   \n *  opsworks.eu-west-3.amazonaws.com\n   \n   \n *  opsworks.eu-central-1.amazonaws.com\n   \n   \n *  opsworks.ap-northeast-1.amazonaws.com\n   \n   \n *  opsworks.ap-northeast-2.amazonaws.com\n   \n   \n *  opsworks.ap-south-1.amazonaws.com\n   \n   \n *  opsworks.ap-southeast-1.amazonaws.com\n   \n   \n *  opsworks.ap-southeast-2.amazonaws.com\n   \n   \n *  opsworks.sa-east-1.amazonaws.com\n   \n   \n\n Chef Versions \n\nWhen you call CreateStack, CloneStack, or UpdateStack we recommend you use the \nConfigurationManager parameter to specify the Chef version. The recommended and\ndefault value for Linux stacks is currently 12. Windows stacks use Chef 12.2.\nFor more information, see Chef Versions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-chef11.html]\n.\n\nYou can specify Chef 12, 11.10, or 11.4 for your Linux stack. We recommend\nmigrating your existing Linux stacks to Chef 12 as soon as possible.",
     "docsUrl": "https://docs.aws.amazon.com/opsworks/",
     "url": "https://api.apis.guru/v2/specs/amazonaws.com/opsworks/2013-02-18/swagger.json",
     "envVars": {},
@@ -20,7 +20,7 @@
                 "label": "Custom Server URL",
                 "viewClass": "TextFieldView"
             },
-            "hmac": {
+            "auth_hmac": {
                 "label": "Authorization (hmac)",
                 "viewClass": "TextFieldView",
                 "note": "Amazon Signature authorization v4"
@@ -38,8 +38,8 @@
     "actions": {
         "AssignInstance": {
             "main": "./lib/actions/AssignInstance.js",
-            "title": "<p>Assign a registered instance to a layer.</p> <ul> <li> <p>You can assign registered on-premises instances to any layer type.</p> </li> <li> <p>You can assign registered Amazon EC2 instances only to custom layers.</p> </li> <li> <p>You cannot use this action with instances that were created with AWS OpsWorks Stacks.</p> </li> </ul> <p> <b>Required Permissions</b>: To use this action, an AWS Identity and Access Management (IAM) user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Assign a registered instance to a layer.</p> <ul> <li> <p>You can assign registered on-premises instances to any layer type.</p> </li> <li> <p>You can assign registered Amazon EC2 instances only to custom layers.</p> </li> <li> <p>You cannot use this action with instances that were created with AWS OpsWorks Stacks.</p> </li> </ul> <p> <b>Required Permissions</b>: To use this action, an AWS Identity and Access Management (IAM) user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "AssignInstance",
+            "description": "Assign a registered instance to a layer.\n\n *  You can assign registered on-premises instances to any layer type.\n   \n   \n *  You can assign registered Amazon EC2 instances only to custom layers.\n   \n   \n *  You cannot use this action with instances that were created with AWS\n   OpsWorks Stacks.\n   \n   \n\n Required Permissions: To use this action, an AWS Identity and Access Management\n(IAM) user must have a Manage permissions level for the stack or an attached\npolicy that explicitly grants permissions. For more information on user\npermissions, see Managing User Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -55,8 +55,8 @@
         },
         "AssignVolume": {
             "main": "./lib/actions/AssignVolume.js",
-            "title": "<p>Assigns one of the stack's registered Amazon EBS volumes to a specified instance. The volume must first be registered with the stack by calling <a>RegisterVolume</a>. After you register the volume, you must call <a>UpdateVolume</a> to specify a mount point before calling <code>AssignVolume</code>. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Assigns one of the stack's registered Amazon EBS volumes to a specified instance. The volume must first be registered with the stack by calling <a>RegisterVolume</a>. After you register the volume, you must call <a>UpdateVolume</a> to specify a mount point before calling <code>AssignVolume</code>. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "AssignVolume",
+            "description": "Assigns one of the stack's registered Amazon EBS volumes to a specified\ninstance. The volume must first be registered with the stack by calling \nRegisterVolume. After you register the volume, you must call UpdateVolume to\nspecify a mount point before calling AssignVolume. For more information, see \nResource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html].\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -72,8 +72,8 @@
         },
         "AssociateElasticIp": {
             "main": "./lib/actions/AssociateElasticIp.js",
-            "title": "<p>Associates one of the stack's registered Elastic IP addresses with a specified instance. The address must first be registered with the stack by calling <a>RegisterElasticIp</a>. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Associates one of the stack's registered Elastic IP addresses with a specified instance. The address must first be registered with the stack by calling <a>RegisterElasticIp</a>. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "AssociateElasticIp",
+            "description": "Associates one of the stack's registered Elastic IP addresses with a specified\ninstance. The address must first be registered with the stack by calling \nRegisterElasticIp. For more information, see Resource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html].\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -89,8 +89,8 @@
         },
         "AttachElasticLoadBalancer": {
             "main": "./lib/actions/AttachElasticLoadBalancer.js",
-            "title": "<p>Attaches an Elastic Load Balancing load balancer to a specified layer. AWS OpsWorks Stacks does not support Application Load Balancer. You can only use Classic Load Balancer with AWS OpsWorks Stacks. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/layers-elb.html\">Elastic Load Balancing</a>.</p> <note> <p>You must create the Elastic Load Balancing instance separately, by using the Elastic Load Balancing console, API, or CLI. For more information, see <a href=\"http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/Welcome.html\"> Elastic Load Balancing Developer Guide</a>.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Attaches an Elastic Load Balancing load balancer to a specified layer. AWS OpsWorks Stacks does not support Application Load Balancer. You can only use Classic Load Balancer with AWS OpsWorks Stacks. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/layers-elb.html\">Elastic Load Balancing</a>.</p> <note> <p>You must create the Elastic Load Balancing instance separately, by using the Elastic Load Balancing console, API, or CLI. For more information, see <a href=\"http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/Welcome.html\"> Elastic Load Balancing Developer Guide</a>.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "AttachElasticLoadBalancer",
+            "description": "Attaches an Elastic Load Balancing load balancer to a specified layer. AWS\nOpsWorks Stacks does not support Application Load Balancer. You can only use\nClassic Load Balancer with AWS OpsWorks Stacks. For more information, see \nElastic Load Balancing\n[http://docs.aws.amazon.com/opsworks/latest/userguide/layers-elb.html].\n\nYou must create the Elastic Load Balancing instance separately, by using the\nElastic Load Balancing console, API, or CLI. For more information, see Elastic\nLoad Balancing Developer Guide\n[http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/Welcome.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -106,8 +106,8 @@
         },
         "CloneStack": {
             "main": "./lib/actions/CloneStack.js",
-            "title": "<p>Creates a clone of a specified stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-cloning.html\">Clone a Stack</a>. By default, all parameters are set to the values used by the parent stack.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Creates a clone of a specified stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-cloning.html\">Clone a Stack</a>. By default, all parameters are set to the values used by the parent stack.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "CloneStack",
+            "description": "Creates a clone of a specified stack. For more information, see Clone a Stack\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-cloning.html]\n. By default, all parameters are set to the values used by the parent stack.\n\n Required Permissions: To use this action, an IAM user must have an attached\npolicy that explicitly grants permissions. For more information about user\npermissions, see Managing User Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -123,8 +123,8 @@
         },
         "CreateApp": {
             "main": "./lib/actions/CreateApp.js",
-            "title": "<p>Creates an app for a specified stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-creating.html\">Creating Apps</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Creates an app for a specified stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-creating.html\">Creating Apps</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "CreateApp",
+            "description": "Creates an app for a specified stack. For more information, see Creating Apps\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-creating.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -140,8 +140,8 @@
         },
         "CreateDeployment": {
             "main": "./lib/actions/CreateDeployment.js",
-            "title": "<p>Runs deployment or stack commands. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-deploying.html\">Deploying Apps</a> and <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-commands.html\">Run Stack Commands</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Deploy or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Runs deployment or stack commands. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-deploying.html\">Deploying Apps</a> and <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-commands.html\">Run Stack Commands</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Deploy or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "CreateDeployment",
+            "description": "Runs deployment or stack commands. For more information, see Deploying Apps\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-deploying.html] \nand Run Stack Commands\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-commands.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Deploy or\nManage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -157,8 +157,8 @@
         },
         "CreateInstance": {
             "main": "./lib/actions/CreateInstance.js",
-            "title": "<p>Creates an instance in a specified stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-add.html\">Adding an Instance to a Layer</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Creates an instance in a specified stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-add.html\">Adding an Instance to a Layer</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "CreateInstance",
+            "description": "Creates an instance in a specified stack. For more information, see Adding an\nInstance to a Layer\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-add.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -174,8 +174,8 @@
         },
         "CreateLayer": {
             "main": "./lib/actions/CreateLayer.js",
-            "title": "<p>Creates a layer. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-basics-create.html\">How to Create a Layer</a>.</p> <note> <p>You should use <b>CreateLayer</b> for noncustom layer types such as PHP App Server only if the stack does not have an existing layer of that type. A stack can have at most one instance of each noncustom layer; if you attempt to create a second instance, <b>CreateLayer</b> fails. A stack can have an arbitrary number of custom layers, so you can call <b>CreateLayer</b> as many times as you like for that layer type.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Creates a layer. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-basics-create.html\">How to Create a Layer</a>.</p> <note> <p>You should use <b>CreateLayer</b> for noncustom layer types such as PHP App Server only if the stack does not have an existing layer of that type. A stack can have at most one instance of each noncustom layer; if you attempt to create a second instance, <b>CreateLayer</b> fails. A stack can have an arbitrary number of custom layers, so you can call <b>CreateLayer</b> as many times as you like for that layer type.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "CreateLayer",
+            "description": "Creates a layer. For more information, see How to Create a Layer\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-basics-create.html]\n.\n\nYou should use CreateLayer for noncustom layer types such as PHP App Server only\nif the stack does not have an existing layer of that type. A stack can have at\nmost one instance of each noncustom layer; if you attempt to create a second\ninstance, CreateLayer fails. A stack can have an arbitrary number of custom\nlayers, so you can call CreateLayer as many times as you like for that layer\ntype.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -191,8 +191,8 @@
         },
         "CreateStack": {
             "main": "./lib/actions/CreateStack.js",
-            "title": "<p>Creates a new stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-edit.html\">Create a New Stack</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Creates a new stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-edit.html\">Create a New Stack</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "CreateStack",
+            "description": "Creates a new stack. For more information, see Create a New Stack\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-edit.html].\n\n Required Permissions: To use this action, an IAM user must have an attached\npolicy that explicitly grants permissions. For more information about user\npermissions, see Managing User Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -208,8 +208,8 @@
         },
         "CreateUserProfile": {
             "main": "./lib/actions/CreateUserProfile.js",
-            "title": "<p>Creates a new user profile.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Creates a new user profile.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "CreateUserProfile",
+            "description": "Creates a new user profile.\n\n Required Permissions: To use this action, an IAM user must have an attached\npolicy that explicitly grants permissions. For more information about user\npermissions, see Managing User Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -225,8 +225,8 @@
         },
         "DeleteApp": {
             "main": "./lib/actions/DeleteApp.js",
-            "title": "<p>Deletes a specified app.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Deletes a specified app.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DeleteApp",
+            "description": "Deletes a specified app.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -242,8 +242,8 @@
         },
         "DeleteInstance": {
             "main": "./lib/actions/DeleteInstance.js",
-            "title": "<p>Deletes a specified instance, which terminates the associated Amazon EC2 instance. You must stop an instance before you can delete it.</p> <p>For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-delete.html\">Deleting Instances</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Deletes a specified instance, which terminates the associated Amazon EC2 instance. You must stop an instance before you can delete it.</p> <p>For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-delete.html\">Deleting Instances</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DeleteInstance",
+            "description": "Deletes a specified instance, which terminates the associated Amazon EC2\ninstance. You must stop an instance before you can delete it.\n\nFor more information, see Deleting Instances\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-delete.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -259,8 +259,8 @@
         },
         "DeleteLayer": {
             "main": "./lib/actions/DeleteLayer.js",
-            "title": "<p>Deletes a specified layer. You must first stop and then delete all associated instances or unassign registered instances. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-basics-delete.html\">How to Delete a Layer</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Deletes a specified layer. You must first stop and then delete all associated instances or unassign registered instances. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-basics-delete.html\">How to Delete a Layer</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DeleteLayer",
+            "description": "Deletes a specified layer. You must first stop and then delete all associated\ninstances or unassign registered instances. For more information, see How to\nDelete a Layer\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-basics-delete.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -276,8 +276,8 @@
         },
         "DeleteStack": {
             "main": "./lib/actions/DeleteStack.js",
-            "title": "<p>Deletes a specified stack. You must first delete all instances, layers, and apps or deregister registered instances. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-shutting.html\">Shut Down a Stack</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Deletes a specified stack. You must first delete all instances, layers, and apps or deregister registered instances. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-shutting.html\">Shut Down a Stack</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DeleteStack",
+            "description": "Deletes a specified stack. You must first delete all instances, layers, and apps\nor deregister registered instances. For more information, see Shut Down a Stack\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-shutting.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -293,8 +293,8 @@
         },
         "DeleteUserProfile": {
             "main": "./lib/actions/DeleteUserProfile.js",
-            "title": "<p>Deletes a user profile.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Deletes a user profile.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DeleteUserProfile",
+            "description": "Deletes a user profile.\n\n Required Permissions: To use this action, an IAM user must have an attached\npolicy that explicitly grants permissions. For more information about user\npermissions, see Managing User Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -310,8 +310,8 @@
         },
         "DeregisterEcsCluster": {
             "main": "./lib/actions/DeregisterEcsCluster.js",
-            "title": "<p>Deregisters a specified Amazon ECS cluster from a stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-ecscluster.html#workinglayers-ecscluster-delete\"> Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html</a>.</p>",
-            "description": "<p>Deregisters a specified Amazon ECS cluster from a stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-ecscluster.html#workinglayers-ecscluster-delete\"> Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html</a>.</p>",
+            "title": "DeregisterEcsCluster",
+            "description": "Deregisters a specified Amazon ECS cluster from a stack. For more information,\nsee Resource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-ecscluster.html#workinglayers-ecscluster-delete]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack or an attached policy that explicitly grants\npermissions. For more information on user permissions, see \nhttp://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -327,8 +327,8 @@
         },
         "DeregisterElasticIp": {
             "main": "./lib/actions/DeregisterElasticIp.js",
-            "title": "<p>Deregisters a specified Elastic IP address. The address can then be registered by another stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Deregisters a specified Elastic IP address. The address can then be registered by another stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DeregisterElasticIp",
+            "description": "Deregisters a specified Elastic IP address. The address can then be registered\nby another stack. For more information, see Resource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html].\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -344,8 +344,8 @@
         },
         "DeregisterInstance": {
             "main": "./lib/actions/DeregisterInstance.js",
-            "title": "<p>Deregister a registered Amazon EC2 or on-premises instance. This action removes the instance from the stack and returns it to your control. This action cannot be used with instances that were created with AWS OpsWorks Stacks.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Deregister a registered Amazon EC2 or on-premises instance. This action removes the instance from the stack and returns it to your control. This action cannot be used with instances that were created with AWS OpsWorks Stacks.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DeregisterInstance",
+            "description": "Deregister a registered Amazon EC2 or on-premises instance. This action removes\nthe instance from the stack and returns it to your control. This action cannot\nbe used with instances that were created with AWS OpsWorks Stacks.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -361,8 +361,8 @@
         },
         "DeregisterRdsDbInstance": {
             "main": "./lib/actions/DeregisterRdsDbInstance.js",
-            "title": "<p>Deregisters an Amazon RDS instance.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Deregisters an Amazon RDS instance.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DeregisterRdsDbInstance",
+            "description": "Deregisters an Amazon RDS instance.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -378,8 +378,8 @@
         },
         "DeregisterVolume": {
             "main": "./lib/actions/DeregisterVolume.js",
-            "title": "<p>Deregisters an Amazon EBS volume. The volume can then be registered by another stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Deregisters an Amazon EBS volume. The volume can then be registered by another stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DeregisterVolume",
+            "description": "Deregisters an Amazon EBS volume. The volume can then be registered by another\nstack. For more information, see Resource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html].\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -395,7 +395,7 @@
         },
         "DescribeAgentVersions": {
             "main": "./lib/actions/DescribeAgentVersions.js",
-            "title": "Describes the available AWS OpsWorks Stacks agent versions. You must specify a stack ID or a configuration manager. <code>DescribeAgentVersions</code> returns a list of available agent versions for the specified stack or configuration manager.",
+            "title": "DescribeAgentVersions",
             "description": "Describes the available AWS OpsWorks Stacks agent versions. You must specify a stack ID or a configuration manager. <code>DescribeAgentVersions</code> returns a list of available agent versions for the specified stack or configuration manager.",
             "fields": {
                 "verbose": {
@@ -412,8 +412,8 @@
         },
         "DescribeApps": {
             "main": "./lib/actions/DescribeApps.js",
-            "title": "<p>Requests a description of a specified set of apps.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Requests a description of a specified set of apps.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeApps",
+            "description": "Requests a description of a specified set of apps.\n\nThis call accepts only one resource-identifying parameter.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -429,8 +429,8 @@
         },
         "DescribeCommands": {
             "main": "./lib/actions/DescribeCommands.js",
-            "title": "<p>Describes the results of specified commands.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Describes the results of specified commands.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeCommands",
+            "description": "Describes the results of specified commands.\n\nThis call accepts only one resource-identifying parameter.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -446,8 +446,8 @@
         },
         "DescribeDeployments": {
             "main": "./lib/actions/DescribeDeployments.js",
-            "title": "<p>Requests a description of a specified set of deployments.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Requests a description of a specified set of deployments.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeDeployments",
+            "description": "Requests a description of a specified set of deployments.\n\nThis call accepts only one resource-identifying parameter.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -463,8 +463,8 @@
         },
         "DescribeEcsClusters": {
             "main": "./lib/actions/DescribeEcsClusters.js",
-            "title": "<p>Describes Amazon ECS clusters that are registered with a stack. If you specify only a stack ID, you can use the <code>MaxResults</code> and <code>NextToken</code> parameters to paginate the response. However, AWS OpsWorks Stacks currently supports only one cluster per layer, so the result set has a maximum of one element.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack or an attached policy that explicitly grants permission. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p> <p>This call accepts only one resource-identifying parameter.</p>",
-            "description": "<p>Describes Amazon ECS clusters that are registered with a stack. If you specify only a stack ID, you can use the <code>MaxResults</code> and <code>NextToken</code> parameters to paginate the response. However, AWS OpsWorks Stacks currently supports only one cluster per layer, so the result set has a maximum of one element.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack or an attached policy that explicitly grants permission. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p> <p>This call accepts only one resource-identifying parameter.</p>",
+            "title": "DescribeEcsClusters",
+            "description": "Describes Amazon ECS clusters that are registered with a stack. If you specify\nonly a stack ID, you can use the MaxResults and NextToken parameters to paginate\nthe response. However, AWS OpsWorks Stacks currently supports only one cluster\nper layer, so the result set has a maximum of one element.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack or an attached policy that explicitly\ngrants permission. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.\n\nThis call accepts only one resource-identifying parameter.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -480,8 +480,8 @@
         },
         "DescribeElasticIps": {
             "main": "./lib/actions/DescribeElasticIps.js",
-            "title": "<p>Describes <a href=\"http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html\">Elastic IP addresses</a>.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Describes <a href=\"http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html\">Elastic IP addresses</a>.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeElasticIps",
+            "description": "Describes Elastic IP addresses\n[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html]\n.\n\nThis call accepts only one resource-identifying parameter.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -497,8 +497,8 @@
         },
         "DescribeElasticLoadBalancers": {
             "main": "./lib/actions/DescribeElasticLoadBalancers.js",
-            "title": "<p>Describes a stack's Elastic Load Balancing instances.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Describes a stack's Elastic Load Balancing instances.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeElasticLoadBalancers",
+            "description": "Describes a stack's Elastic Load Balancing instances.\n\nThis call accepts only one resource-identifying parameter.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -514,8 +514,8 @@
         },
         "DescribeInstances": {
             "main": "./lib/actions/DescribeInstances.js",
-            "title": "<p>Requests a description of a set of instances.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Requests a description of a set of instances.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeInstances",
+            "description": "Requests a description of a set of instances.\n\nThis call accepts only one resource-identifying parameter.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -531,8 +531,8 @@
         },
         "DescribeLayers": {
             "main": "./lib/actions/DescribeLayers.js",
-            "title": "<p>Requests a description of one or more layers in a specified stack.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Requests a description of one or more layers in a specified stack.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeLayers",
+            "description": "Requests a description of one or more layers in a specified stack.\n\nThis call accepts only one resource-identifying parameter.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -548,8 +548,8 @@
         },
         "DescribeLoadBasedAutoScaling": {
             "main": "./lib/actions/DescribeLoadBasedAutoScaling.js",
-            "title": "<p>Describes load-based auto scaling configurations for specified layers.</p> <note> <p>You must specify at least one of the parameters.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Describes load-based auto scaling configurations for specified layers.</p> <note> <p>You must specify at least one of the parameters.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeLoadBasedAutoScaling",
+            "description": "Describes load-based auto scaling configurations for specified layers.\n\nYou must specify at least one of the parameters.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -565,8 +565,8 @@
         },
         "DescribeMyUserProfile": {
             "main": "./lib/actions/DescribeMyUserProfile.js",
-            "title": "<p>Describes a user's SSH information.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have self-management enabled or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Describes a user's SSH information.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have self-management enabled or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeMyUserProfile",
+            "description": "Describes a user's SSH information.\n\n Required Permissions: To use this action, an IAM user must have self-management\nenabled or an attached policy that explicitly grants permissions. For more\ninformation about user permissions, see Managing User Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -582,7 +582,7 @@
         },
         "DescribeOperatingSystems": {
             "main": "./lib/actions/DescribeOperatingSystems.js",
-            "title": "Describes the operating systems that are supported by AWS OpsWorks Stacks.",
+            "title": "DescribeOperatingSystems",
             "description": "Describes the operating systems that are supported by AWS OpsWorks Stacks.",
             "fields": {
                 "verbose": {
@@ -599,8 +599,8 @@
         },
         "DescribePermissions": {
             "main": "./lib/actions/DescribePermissions.js",
-            "title": "<p>Describes the permissions for a specified stack.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Describes the permissions for a specified stack.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribePermissions",
+            "description": "Describes the permissions for a specified stack.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -616,8 +616,8 @@
         },
         "DescribeRaidArrays": {
             "main": "./lib/actions/DescribeRaidArrays.js",
-            "title": "<p>Describe an instance's RAID arrays.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Describe an instance's RAID arrays.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeRaidArrays",
+            "description": "Describe an instance's RAID arrays.\n\nThis call accepts only one resource-identifying parameter.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -633,8 +633,8 @@
         },
         "DescribeRdsDbInstances": {
             "main": "./lib/actions/DescribeRdsDbInstances.js",
-            "title": "<p>Describes Amazon RDS instances.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p> <p>This call accepts only one resource-identifying parameter.</p>",
-            "description": "<p>Describes Amazon RDS instances.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p> <p>This call accepts only one resource-identifying parameter.</p>",
+            "title": "DescribeRdsDbInstances",
+            "description": "Describes Amazon RDS instances.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.\n\nThis call accepts only one resource-identifying parameter.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -650,8 +650,8 @@
         },
         "DescribeServiceErrors": {
             "main": "./lib/actions/DescribeServiceErrors.js",
-            "title": "<p>Describes AWS OpsWorks Stacks service errors.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p> <p>This call accepts only one resource-identifying parameter.</p>",
-            "description": "<p>Describes AWS OpsWorks Stacks service errors.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p> <p>This call accepts only one resource-identifying parameter.</p>",
+            "title": "DescribeServiceErrors",
+            "description": "Describes AWS OpsWorks Stacks service errors.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.\n\nThis call accepts only one resource-identifying parameter.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -667,8 +667,8 @@
         },
         "DescribeStackProvisioningParameters": {
             "main": "./lib/actions/DescribeStackProvisioningParameters.js",
-            "title": "<p>Requests a description of a stack's provisioning parameters.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Requests a description of a stack's provisioning parameters.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeStackProvisioningParameters",
+            "description": "Requests a description of a stack's provisioning parameters.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -684,8 +684,8 @@
         },
         "DescribeStackSummary": {
             "main": "./lib/actions/DescribeStackSummary.js",
-            "title": "<p>Describes the number of layers and apps in a specified stack, and the number of instances in each state, such as <code>running_setup</code> or <code>online</code>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Describes the number of layers and apps in a specified stack, and the number of instances in each state, such as <code>running_setup</code> or <code>online</code>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeStackSummary",
+            "description": "Describes the number of layers and apps in a specified stack, and the number of\ninstances in each state, such as running_setup or online.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -701,8 +701,8 @@
         },
         "DescribeStacks": {
             "main": "./lib/actions/DescribeStacks.js",
-            "title": "<p>Requests a description of one or more stacks.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Requests a description of one or more stacks.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeStacks",
+            "description": "Requests a description of one or more stacks.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -718,8 +718,8 @@
         },
         "DescribeTimeBasedAutoScaling": {
             "main": "./lib/actions/DescribeTimeBasedAutoScaling.js",
-            "title": "<p>Describes time-based auto scaling configurations for specified instances.</p> <note> <p>You must specify at least one of the parameters.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Describes time-based auto scaling configurations for specified instances.</p> <note> <p>You must specify at least one of the parameters.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeTimeBasedAutoScaling",
+            "description": "Describes time-based auto scaling configurations for specified instances.\n\nYou must specify at least one of the parameters.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -735,8 +735,8 @@
         },
         "DescribeUserProfiles": {
             "main": "./lib/actions/DescribeUserProfiles.js",
-            "title": "<p>Describe specified users.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Describe specified users.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeUserProfiles",
+            "description": "Describe specified users.\n\n Required Permissions: To use this action, an IAM user must have an attached\npolicy that explicitly grants permissions. For more information about user\npermissions, see Managing User Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -752,8 +752,8 @@
         },
         "DescribeVolumes": {
             "main": "./lib/actions/DescribeVolumes.js",
-            "title": "<p>Describes an instance's Amazon EBS volumes.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Describes an instance's Amazon EBS volumes.</p> <note> <p>This call accepts only one resource-identifying parameter.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DescribeVolumes",
+            "description": "Describes an instance's Amazon EBS volumes.\n\nThis call accepts only one resource-identifying parameter.\n\n Required Permissions: To use this action, an IAM user must have a Show, Deploy,\nor Manage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information about user permissions, see Managing\nUser Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -769,8 +769,8 @@
         },
         "DetachElasticLoadBalancer": {
             "main": "./lib/actions/DetachElasticLoadBalancer.js",
-            "title": "<p>Detaches a specified Elastic Load Balancing instance from its layer.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Detaches a specified Elastic Load Balancing instance from its layer.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DetachElasticLoadBalancer",
+            "description": "Detaches a specified Elastic Load Balancing instance from its layer.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -786,8 +786,8 @@
         },
         "DisassociateElasticIp": {
             "main": "./lib/actions/DisassociateElasticIp.js",
-            "title": "<p>Disassociates an Elastic IP address from its instance. The address remains registered with the stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Disassociates an Elastic IP address from its instance. The address remains registered with the stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "DisassociateElasticIp",
+            "description": "Disassociates an Elastic IP address from its instance. The address remains\nregistered with the stack. For more information, see Resource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html].\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -803,8 +803,8 @@
         },
         "GetHostnameSuggestion": {
             "main": "./lib/actions/GetHostnameSuggestion.js",
-            "title": "<p>Gets a generated host name for the specified layer, based on the current host name theme.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Gets a generated host name for the specified layer, based on the current host name theme.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "GetHostnameSuggestion",
+            "description": "Gets a generated host name for the specified layer, based on the current host\nname theme.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -820,8 +820,8 @@
         },
         "GrantAccess": {
             "main": "./lib/actions/GrantAccess.js",
-            "title": "<note> <p>This action can be used only with Windows stacks.</p> </note> <p>Grants RDP access to a Windows instance for a specified time period.</p>",
-            "description": "<note> <p>This action can be used only with Windows stacks.</p> </note> <p>Grants RDP access to a Windows instance for a specified time period.</p>",
+            "title": "GrantAccess",
+            "description": " This action can be used only with Windows stacks.\n\nGrants RDP access to a Windows instance for a specified time period.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -837,7 +837,7 @@
         },
         "ListTags": {
             "main": "./lib/actions/ListTags.js",
-            "title": "Returns a list of tags that are applied to the specified stack or layer.",
+            "title": "ListTags",
             "description": "Returns a list of tags that are applied to the specified stack or layer.",
             "fields": {
                 "verbose": {
@@ -854,8 +854,8 @@
         },
         "RebootInstance": {
             "main": "./lib/actions/RebootInstance.js",
-            "title": "<p>Reboots a specified instance. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-starting.html\">Starting, Stopping, and Rebooting Instances</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Reboots a specified instance. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-starting.html\">Starting, Stopping, and Rebooting Instances</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "RebootInstance",
+            "description": "Reboots a specified instance. For more information, see Starting, Stopping, and\nRebooting Instances\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-starting.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -871,8 +871,8 @@
         },
         "RegisterEcsCluster": {
             "main": "./lib/actions/RegisterEcsCluster.js",
-            "title": "<p>Registers a specified Amazon ECS cluster with a stack. You can register only one cluster with a stack. A cluster can be registered with only one stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-ecscluster.html\"> Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\"> Managing User Permissions</a>.</p>",
-            "description": "<p>Registers a specified Amazon ECS cluster with a stack. You can register only one cluster with a stack. A cluster can be registered with only one stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-ecscluster.html\"> Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\"> Managing User Permissions</a>.</p>",
+            "title": "RegisterEcsCluster",
+            "description": "Registers a specified Amazon ECS cluster with a stack. You can register only one\ncluster with a stack. A cluster can be registered with only one stack. For more\ninformation, see Resource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers-ecscluster.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -888,8 +888,8 @@
         },
         "RegisterElasticIp": {
             "main": "./lib/actions/RegisterElasticIp.js",
-            "title": "<p>Registers an Elastic IP address with a specified stack. An address can be registered with only one stack at a time. If the address is already registered, you must first deregister it by calling <a>DeregisterElasticIp</a>. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Registers an Elastic IP address with a specified stack. An address can be registered with only one stack at a time. If the address is already registered, you must first deregister it by calling <a>DeregisterElasticIp</a>. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "RegisterElasticIp",
+            "description": "Registers an Elastic IP address with a specified stack. An address can be\nregistered with only one stack at a time. If the address is already registered,\nyou must first deregister it by calling DeregisterElasticIp. For more\ninformation, see Resource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html].\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -905,8 +905,8 @@
         },
         "RegisterInstance": {
             "main": "./lib/actions/RegisterInstance.js",
-            "title": "<p>Registers instances that were created outside of AWS OpsWorks Stacks with a specified stack.</p> <note> <p>We do not recommend using this action to register instances. The complete registration operation includes two tasks: installing the AWS OpsWorks Stacks agent on the instance, and registering the instance with the stack. <code>RegisterInstance</code> handles only the second step. You should instead use the AWS CLI <code>register</code> command, which performs the entire registration operation. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/registered-instances-register.html\"> Registering an Instance with an AWS OpsWorks Stacks Stack</a>.</p> </note> <p>Registered instances have the same requirements as instances that are created by using the <a>CreateInstance</a> API. For example, registered instances must be running a supported Linux-based operating system, and they must have a supported instance type. For more information about requirements for instances that you want to register, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/registered-instances-register-registering-preparer.html\"> Preparing the Instance</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Registers instances that were created outside of AWS OpsWorks Stacks with a specified stack.</p> <note> <p>We do not recommend using this action to register instances. The complete registration operation includes two tasks: installing the AWS OpsWorks Stacks agent on the instance, and registering the instance with the stack. <code>RegisterInstance</code> handles only the second step. You should instead use the AWS CLI <code>register</code> command, which performs the entire registration operation. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/registered-instances-register.html\"> Registering an Instance with an AWS OpsWorks Stacks Stack</a>.</p> </note> <p>Registered instances have the same requirements as instances that are created by using the <a>CreateInstance</a> API. For example, registered instances must be running a supported Linux-based operating system, and they must have a supported instance type. For more information about requirements for instances that you want to register, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/registered-instances-register-registering-preparer.html\"> Preparing the Instance</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "RegisterInstance",
+            "description": "Registers instances that were created outside of AWS OpsWorks Stacks with a\nspecified stack.\n\nWe do not recommend using this action to register instances. The complete\nregistration operation includes two tasks: installing the AWS OpsWorks Stacks\nagent on the instance, and registering the instance with the stack. \nRegisterInstance handles only the second step. You should instead use the AWS\nCLI register command, which performs the entire registration operation. For more\ninformation, see Registering an Instance with an AWS OpsWorks Stacks Stack\n[http://docs.aws.amazon.com/opsworks/latest/userguide/registered-instances-register.html]\n.\n\nRegistered instances have the same requirements as instances that are created by\nusing the CreateInstance API. For example, registered instances must be running\na supported Linux-based operating system, and they must have a supported\ninstance type. For more information about requirements for instances that you\nwant to register, see Preparing the Instance\n[http://docs.aws.amazon.com/opsworks/latest/userguide/registered-instances-register-registering-preparer.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -922,8 +922,8 @@
         },
         "RegisterRdsDbInstance": {
             "main": "./lib/actions/RegisterRdsDbInstance.js",
-            "title": "<p>Registers an Amazon RDS instance with a stack.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Registers an Amazon RDS instance with a stack.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "RegisterRdsDbInstance",
+            "description": "Registers an Amazon RDS instance with a stack.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -939,8 +939,8 @@
         },
         "RegisterVolume": {
             "main": "./lib/actions/RegisterVolume.js",
-            "title": "<p>Registers an Amazon EBS volume with a specified stack. A volume can be registered with only one stack at a time. If the volume is already registered, you must first deregister it by calling <a>DeregisterVolume</a>. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Registers an Amazon EBS volume with a specified stack. A volume can be registered with only one stack at a time. If the volume is already registered, you must first deregister it by calling <a>DeregisterVolume</a>. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "RegisterVolume",
+            "description": "Registers an Amazon EBS volume with a specified stack. A volume can be\nregistered with only one stack at a time. If the volume is already registered,\nyou must first deregister it by calling DeregisterVolume. For more information,\nsee Resource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html].\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -956,8 +956,8 @@
         },
         "SetLoadBasedAutoScaling": {
             "main": "./lib/actions/SetLoadBasedAutoScaling.js",
-            "title": "<p>Specify the load-based auto scaling configuration for a specified layer. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-autoscaling.html\">Managing Load with Time-based and Load-based Instances</a>.</p> <note> <p>To use load-based auto scaling, you must create a set of load-based auto scaling instances. Load-based auto scaling operates only on the instances from that set, so you must ensure that you have created enough instances to handle the maximum anticipated load.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Specify the load-based auto scaling configuration for a specified layer. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-autoscaling.html\">Managing Load with Time-based and Load-based Instances</a>.</p> <note> <p>To use load-based auto scaling, you must create a set of load-based auto scaling instances. Load-based auto scaling operates only on the instances from that set, so you must ensure that you have created enough instances to handle the maximum anticipated load.</p> </note> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "SetLoadBasedAutoScaling",
+            "description": "Specify the load-based auto scaling configuration for a specified layer. For\nmore information, see Managing Load with Time-based and Load-based Instances\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-autoscaling.html]\n.\n\nTo use load-based auto scaling, you must create a set of load-based auto scaling\ninstances. Load-based auto scaling operates only on the instances from that set,\nso you must ensure that you have created enough instances to handle the maximum\nanticipated load.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -973,8 +973,8 @@
         },
         "SetPermission": {
             "main": "./lib/actions/SetPermission.js",
-            "title": "<p>Specifies a user's permissions. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingsecurity.html\">Security and Permissions</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Specifies a user's permissions. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workingsecurity.html\">Security and Permissions</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "SetPermission",
+            "description": "Specifies a user's permissions. For more information, see Security and\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workingsecurity.html].\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -990,8 +990,8 @@
         },
         "SetTimeBasedAutoScaling": {
             "main": "./lib/actions/SetTimeBasedAutoScaling.js",
-            "title": "<p>Specify the time-based auto scaling configuration for a specified instance. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-autoscaling.html\">Managing Load with Time-based and Load-based Instances</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Specify the time-based auto scaling configuration for a specified instance. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-autoscaling.html\">Managing Load with Time-based and Load-based Instances</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "SetTimeBasedAutoScaling",
+            "description": "Specify the time-based auto scaling configuration for a specified instance. For\nmore information, see Managing Load with Time-based and Load-based Instances\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-autoscaling.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1007,8 +1007,8 @@
         },
         "StartInstance": {
             "main": "./lib/actions/StartInstance.js",
-            "title": "<p>Starts a specified instance. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-starting.html\">Starting, Stopping, and Rebooting Instances</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Starts a specified instance. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-starting.html\">Starting, Stopping, and Rebooting Instances</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "StartInstance",
+            "description": "Starts a specified instance. For more information, see Starting, Stopping, and\nRebooting Instances\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-starting.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1024,8 +1024,8 @@
         },
         "StartStack": {
             "main": "./lib/actions/StartStack.js",
-            "title": "<p>Starts a stack's instances.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Starts a stack's instances.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "StartStack",
+            "description": "Starts a stack's instances.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1041,8 +1041,8 @@
         },
         "StopInstance": {
             "main": "./lib/actions/StopInstance.js",
-            "title": "<p>Stops a specified instance. When you stop a standard instance, the data disappears and must be reinstalled when you restart the instance. You can stop an Amazon EBS-backed instance without losing data. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-starting.html\">Starting, Stopping, and Rebooting Instances</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Stops a specified instance. When you stop a standard instance, the data disappears and must be reinstalled when you restart the instance. You can stop an Amazon EBS-backed instance without losing data. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-starting.html\">Starting, Stopping, and Rebooting Instances</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "StopInstance",
+            "description": "Stops a specified instance. When you stop a standard instance, the data\ndisappears and must be reinstalled when you restart the instance. You can stop\nan Amazon EBS-backed instance without losing data. For more information, see \nStarting, Stopping, and Rebooting Instances\n[http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-starting.html]\n.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1058,8 +1058,8 @@
         },
         "StopStack": {
             "main": "./lib/actions/StopStack.js",
-            "title": "<p>Stops a specified stack.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Stops a specified stack.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "StopStack",
+            "description": "Stops a specified stack.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1075,7 +1075,7 @@
         },
         "TagResource": {
             "main": "./lib/actions/TagResource.js",
-            "title": "Apply cost-allocation tags to a specified stack or layer in AWS OpsWorks Stacks. For more information about how tagging works, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/tagging.html\">Tags</a> in the AWS OpsWorks User Guide.",
+            "title": "TagResource",
             "description": "Apply cost-allocation tags to a specified stack or layer in AWS OpsWorks Stacks. For more information about how tagging works, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/tagging.html\">Tags</a> in the AWS OpsWorks User Guide.",
             "fields": {
                 "verbose": {
@@ -1092,8 +1092,8 @@
         },
         "UnassignInstance": {
             "main": "./lib/actions/UnassignInstance.js",
-            "title": "<p>Unassigns a registered instance from all layers that are using the instance. The instance remains in the stack as an unassigned instance, and can be assigned to another layer as needed. You cannot use this action with instances that were created with AWS OpsWorks Stacks.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Unassigns a registered instance from all layers that are using the instance. The instance remains in the stack as an unassigned instance, and can be assigned to another layer as needed. You cannot use this action with instances that were created with AWS OpsWorks Stacks.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "UnassignInstance",
+            "description": "Unassigns a registered instance from all layers that are using the instance. The\ninstance remains in the stack as an unassigned instance, and can be assigned to\nanother layer as needed. You cannot use this action with instances that were\ncreated with AWS OpsWorks Stacks.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack or an attached policy that explicitly grants\npermissions. For more information about user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1109,8 +1109,8 @@
         },
         "UnassignVolume": {
             "main": "./lib/actions/UnassignVolume.js",
-            "title": "<p>Unassigns an assigned Amazon EBS volume. The volume remains registered with the stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Unassigns an assigned Amazon EBS volume. The volume remains registered with the stack. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "UnassignVolume",
+            "description": "Unassigns an assigned Amazon EBS volume. The volume remains registered with the\nstack. For more information, see Resource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html].\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1126,7 +1126,7 @@
         },
         "UntagResource": {
             "main": "./lib/actions/UntagResource.js",
-            "title": "Removes tags from a specified stack or layer.",
+            "title": "UntagResource",
             "description": "Removes tags from a specified stack or layer.",
             "fields": {
                 "verbose": {
@@ -1143,8 +1143,8 @@
         },
         "UpdateApp": {
             "main": "./lib/actions/UpdateApp.js",
-            "title": "<p>Updates a specified app.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Deploy or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Updates a specified app.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Deploy or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "UpdateApp",
+            "description": "Updates a specified app.\n\n Required Permissions: To use this action, an IAM user must have a Deploy or\nManage permissions level for the stack, or an attached policy that explicitly\ngrants permissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1160,8 +1160,8 @@
         },
         "UpdateElasticIp": {
             "main": "./lib/actions/UpdateElasticIp.js",
-            "title": "<p>Updates a registered Elastic IP address's name. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Updates a registered Elastic IP address's name. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "UpdateElasticIp",
+            "description": "Updates a registered Elastic IP address's name. For more information, see \nResource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html].\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1177,8 +1177,8 @@
         },
         "UpdateInstance": {
             "main": "./lib/actions/UpdateInstance.js",
-            "title": "<p>Updates a specified instance.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Updates a specified instance.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "UpdateInstance",
+            "description": "Updates a specified instance.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1194,8 +1194,8 @@
         },
         "UpdateLayer": {
             "main": "./lib/actions/UpdateLayer.js",
-            "title": "<p>Updates a specified layer.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Updates a specified layer.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "UpdateLayer",
+            "description": "Updates a specified layer.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1211,8 +1211,8 @@
         },
         "UpdateMyUserProfile": {
             "main": "./lib/actions/UpdateMyUserProfile.js",
-            "title": "<p>Updates a user's SSH public key.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have self-management enabled or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Updates a user's SSH public key.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have self-management enabled or an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "UpdateMyUserProfile",
+            "description": "Updates a user's SSH public key.\n\n Required Permissions: To use this action, an IAM user must have self-management\nenabled or an attached policy that explicitly grants permissions. For more\ninformation about user permissions, see Managing User Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1228,8 +1228,8 @@
         },
         "UpdateRdsDbInstance": {
             "main": "./lib/actions/UpdateRdsDbInstance.js",
-            "title": "<p>Updates an Amazon RDS instance.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Updates an Amazon RDS instance.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "UpdateRdsDbInstance",
+            "description": "Updates an Amazon RDS instance.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1245,8 +1245,8 @@
         },
         "UpdateStack": {
             "main": "./lib/actions/UpdateStack.js",
-            "title": "<p>Updates a specified stack.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Updates a specified stack.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "UpdateStack",
+            "description": "Updates a specified stack.\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1262,8 +1262,8 @@
         },
         "UpdateUserProfile": {
             "main": "./lib/actions/UpdateUserProfile.js",
-            "title": "<p>Updates a specified user profile.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Updates a specified user profile.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have an attached policy that explicitly grants permissions. For more information about user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "UpdateUserProfile",
+            "description": "Updates a specified user profile.\n\n Required Permissions: To use this action, an IAM user must have an attached\npolicy that explicitly grants permissions. For more information about user\npermissions, see Managing User Permissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1279,8 +1279,8 @@
         },
         "UpdateVolume": {
             "main": "./lib/actions/UpdateVolume.js",
-            "title": "<p>Updates an Amazon EBS volume's name or mount point. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
-            "description": "<p>Updates an Amazon EBS volume's name or mount point. For more information, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html\">Resource Management</a>.</p> <p> <b>Required Permissions</b>: To use this action, an IAM user must have a Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information on user permissions, see <a href=\"http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html\">Managing User Permissions</a>.</p>",
+            "title": "UpdateVolume",
+            "description": "Updates an Amazon EBS volume's name or mount point. For more information, see \nResource Management\n[http://docs.aws.amazon.com/opsworks/latest/userguide/resources.html].\n\n Required Permissions: To use this action, an IAM user must have a Manage\npermissions level for the stack, or an attached policy that explicitly grants\npermissions. For more information on user permissions, see Managing User\nPermissions\n[http://docs.aws.amazon.com/opsworks/latest/userguide/opsworks-security-users.html]\n.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
